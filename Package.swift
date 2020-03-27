@@ -1,5 +1,4 @@
-// swift-tools-version:5.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:5.1
 import PackageDescription
 
 let package = Package(
@@ -22,9 +21,9 @@ let package = Package(
             targets: ["ImageSlideshowKingfisher"])
     ],
     dependencies: [
-        .package(url: "https://github.com/onevcat/Kingfisher.git", from: "5.13.2"),
-        .package(url: "https://github.com/Alamofire/AlamofireImage.git", .from("4.0.3")),
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.6.1")
+        .package(url: "https://github.com/onevcat/Kingfisher.git"),
+        .package(url: "https://github.com/Alamofire/AlamofireImage.git"),
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git")
     ],
     targets: [
         .target(
