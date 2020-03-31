@@ -35,36 +35,12 @@ Image slideshow is a Swift library providing customizable image slideshow with c
     core.source_files = 'ImageSlideshow/Classes/Core/**/*'
     core.resources = 'ImageSlideshow/Assets/*.png'
   end
-
-  s.subspec 'AFURL' do |subspec|
-    subspec.dependency 'ImageSlideshow/Core'
-    subspec.dependency 'AFNetworking', '~> 3.0'
-    subspec.source_files = 'ImageSlideshow/Classes/InputSources/AFURLSource.swift'
-  end
-
-  s.subspec 'Alamofire' do |subspec|
-    subspec.dependency 'ImageSlideshow/Core'
-    subspec.dependency 'AlamofireImage', '~> 3.0'
-    subspec.source_files = 'ImageSlideshow/Classes/InputSources/AlamofireSource.swift'
-  end
-
-  s.subspec 'SDWebImage' do |subspec|
-    subspec.dependency 'ImageSlideshow/Core'
-    subspec.dependency 'SDWebImage', '>= 3.7'
-    subspec.source_files = 'ImageSlideshow/Classes/InputSources/SDWebImageSource.swift'
-  end
-
+  
   s.subspec 'Kingfisher' do |subspec|
     subspec.dependency 'ImageSlideshow/Core'
     subspec.dependency 'Kingfisher', '> 3.0'
     subspec.platform     = :ios, '10.0'
     subspec.source_files = 'ImageSlideshow/Classes/InputSources/KingfisherSource.swift'
-  end
-
-  s.subspec 'Parse' do |subspec|
-    subspec.dependency 'ImageSlideshow/Core'
-    subspec.dependency 'Parse', '~> 1.14'
-    subspec.source_files = 'ImageSlideshow/Classes/InputSources/ParseSource.swift'
   end
 
   s.default_subspec = 'Core'
